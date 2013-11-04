@@ -13,18 +13,6 @@ There are only four main steps:
 3. Color shapes
 4. Visualize in 3D
 
-.. |addshapes| image:: add_shapes.png
-   :scale: 50 %
-
-.. |addattributes| image:: add_attributes.png
-   :scale: 50 %
-
-.. |colorshapes| image:: color_shapes.png
-   :scale: 50 %
-
-.. |visualizein3d| image:: visualize_in_3d.png
-   :scale: 50%
-
 |addshapes| Add Shapes
 ----------------------
 
@@ -39,18 +27,19 @@ More details here: :doc:`Adding Shapes`
 |addattributes| Add Attributes
 ------------------------------
 
+Note that this step *isn't* necessary if the layer you added already has attributes you want to visualize built-in! This is often the case with shapefiles. This step *is* required if the data you want to visualize is from a different file or table than the shapes.
+
 - In the :guilabel:`layer panel`, click on the name of the shape layer you just added. This will make it the current layer, which is indicated with blue text.
 - From the File menu, select :menuselection:`Add Attributes to Layer…`
 - Select a file with attributes to join to the current shape layer, and specify which field to join to. 
 - Click :guilabel:`OK`. You can then select the file or table you just added to the layer as a :guilabel:`data set` for that layer. More on that in the next step.
-- Note that adding attributes step *isn't* necessary if the shape layer you added already has attributes built in!
 
 More details here: :doc:`Adding Attributes`
 
 |colorshapes| Color Shapes
 --------------------------
 
-This step is the heart of GeoCanvas, and where things get interesting! Now that you've got shapes and attributes, you use the attributes to paint the shapes, that is to "Theme" them.
+This step is the heart of GeoCanvas, and where things get interesting! Now that you've got shapes and attributes, you use the attributes to paint the shapes, that is to "theme" them.
 
 Theming is done on a layer by layer basis, so the controls for theming are located in the layer panel, and accessible for each layer.
 
@@ -64,6 +53,21 @@ Check it out here: :doc:`Theming`
 |visualizein3d| Visualize in 3D
 -------------------------------
 
+- This part is even better than coloring.
+
 
 More details here: :doc:`Theming`
+
+
+.. |addshapes| image:: add_shapes.png
+   :scale: 50 %
+
+.. |addattributes| image:: add_attributes.png
+   :scale: 50 %
+
+.. |colorshapes| image:: color_shapes.png
+   :scale: 50 %
+
+.. |visualizein3d| image:: visualize_in_3d.png
+   :scale: 50%
 
