@@ -29,7 +29,7 @@
     <script type="text/javascript" src="_static/theme_extras.js"></script>
     <link rel="shortcut icon" href="_static/GeoCanvas.ico"/>
     <link rel="top" title="GeoCanvas  documentation" href="index.html" />
-    <link rel="next" title="Add Shapes" href="Add Shapes.html" />
+    <link rel="next" title="Adding Shapes" href="Adding Shapes.html" />
     <link rel="prev" title="Learn the Interface" href="Learn the Interface.html" /> 
   </head>
   <body>
@@ -44,7 +44,7 @@
         &#160;&#160;::&#160;&#160;
         <a class="uplink" href="index.html">Contents</a>
         &#160;&#160;::&#160;&#160;
-        <a href="Add Shapes.html">Add Shapes</a>&#160;&#160;»
+        <a href="Adding Shapes.html">Adding Shapes</a>&#160;&#160;»
         </p>
 
       </div>
@@ -53,21 +53,43 @@
         
   <div class="section" id="layer-controls">
 <h1>Layer Controls<a class="headerlink" href="#layer-controls" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="common-layer-controls">
-<h2>Common Layer Controls<a class="headerlink" href="#common-layer-controls" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="layer-visibility">
-<h3>Layer Visibility<a class="headerlink" href="#layer-visibility" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="current-layer">
+<h2>Current Layer<a class="headerlink" href="#current-layer" title="Permalink to this headline">¶</a></h2>
+<p>At any time, only one layer can be the <em class="guilabel">current layer</em> even though many layers may be visible.</p>
+<ul class="simple">
+<li>The current layer is the shape layer to which new attributes are added when <em class="menuselection">Add Attributes to Layer</em> is selected from the File menu.</li>
+<li>The current layer is also the selectable layer. Only shapes on the current layer can be selected with the selection tool.</li>
+</ul>
+<p>Only shape layers can be made the current layer. So when GeoCanvas starts, there is no current layer, since there are only base map layers to start.</p>
+<p><strong>To make a layer current, click its name in the layer panel.</strong></p>
+<p>The name current layer will be shown in blue. All other layer names will be shown in black. (Clicking base map layer names has no effect.)</p>
 </div>
-<div class="section" id="show-hide-expanded-controls">
-<h3>Show / Hide Expanded Controls<a class="headerlink" href="#show-hide-expanded-controls" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="visibility-toggle">
+<h2>Visibility Toggle<a class="headerlink" href="#visibility-toggle" title="Permalink to this headline">¶</a></h2>
+<p>The control to the left of a layer&#8217;s name in the layer panel is it&#8217;s <em class="guilabel">visibility toggle</em>. The <em class="guilabel">visibility toggle</em> indicates whether is layer is Off, 2D, or 3D.</p>
+<ul class="simple">
+<li>Base map layers can be Off, or 2D.</li>
+<li>Shape layers can be Off, 2D, or 3D.</li>
+</ul>
+<p><strong>To switch between modes, click on the icon.</strong></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <em class="guilabel">visibility limit</em> control (explained below) also determines the visibility of shape layers. If your layer is not appearing, first make sure it&#8217;s in 2D or 3D mode, and then check it&#8217;s visibility limit.</p>
 </div>
+</div>
+<div class="section" id="show-hide-layer-controls">
+<h2>Show / Hide Layer Controls<a class="headerlink" href="#show-hide-layer-controls" title="Permalink to this headline">¶</a></h2>
+<p>Shows additional controls for each layer. Which controls are shown depends on the type of layer - that is, whether the layer is a base map layer or shape layer. There are also a common set of controls shown for all layers</p>
+</div>
+<div class="section" id="common-controls">
+<h2>Common Controls<a class="headerlink" href="#common-controls" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="move-layer-up">
 <h3>Move Layer Up<a class="headerlink" href="#move-layer-up" title="Permalink to this headline">¶</a></h3>
-<a class="reference internal image-reference" href="_images/layerUp.png"><img alt="_images/layerUp.png" src="_images/layerUp.png" style="width: 3.0px; height: 3.0px;" /></a>
+<a class="reference internal image-reference" href="layerUp&#64;2x.png"><img alt="layerUp&#64;2x.png" src="layerUp&#64;2x.png" /></a>
 </div>
 <div class="section" id="move-layer-down">
 <h3>Move Layer Down<a class="headerlink" href="#move-layer-down" title="Permalink to this headline">¶</a></h3>
-<a class="reference internal image-reference" href="_images/layerDown.png"><img alt="_images/layerDown.png" src="_images/layerDown.png" style="width: 3.0px; height: 3.0px;" /></a>
+<a class="reference internal image-reference" href="layerDown&#64;2x.png"><img alt="layerDown&#64;2x.png" src="layerDown&#64;2x.png" /></a>
 </div>
 <div class="section" id="opacity">
 <h3>Opacity<a class="headerlink" href="#opacity" title="Permalink to this headline">¶</a></h3>
@@ -124,7 +146,7 @@
         &#160;&#160;::&#160;&#160;
         <a class="uplink" href="index.html">Contents</a>
         &#160;&#160;::&#160;&#160;
-        <a href="Add Shapes.html">Add Shapes</a>&#160;&#160;»
+        <a href="Adding Shapes.html">Adding Shapes</a>&#160;&#160;»
         </p>
 
       </div>
