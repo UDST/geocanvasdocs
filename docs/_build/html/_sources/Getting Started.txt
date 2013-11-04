@@ -39,7 +39,7 @@ More details here: :doc:`Adding Attributes`
 |colorshapes| Color Shapes
 --------------------------
 
-This step is the heart of GeoCanvas, and where things get interesting! Now that you've got shapes and attributes, you use the attributes to paint the shapes, that is to "theme" them.
+Now that you've got shapes and attributes, you use the attributes to paint the shapes, that is to "theme" them. 
 
 Theming is done on a layer by layer basis, so the controls for theming are located in the layer panel, and accessible for each layer.
 
@@ -48,16 +48,18 @@ Theming is done on a layer by layer basis, so the controls for theming are locat
 - Pick the specific attribute to use for theming from the :guilabel:`Data Field` drop down box.
 - Select a color scheme, a type of interval, and a number of bins. Generally, more bins look better. The particulars of what all that means will be explained in the detailed theming section.
 
-Check it out here: :doc:`Theming`
+More details here: :doc:`Theming`
 
 |visualizein3d| Visualize in 3D
 -------------------------------
 
-- This part is even better than coloring.
+This step is the heart of GeoCanvas, and where things get interesting! It's also the easiest part. 
 
+- At the bottom of the layer controls for the active layer, click the :guilabel:`Extrusion` tab. This will automatically show the layer in 3D, which is indicated by the cube icon next to the layer name. 
+- Choose the :guilabel:`Data Set` and :guilabel:`Data Field` as you did to color the shapes. The values of the selected attribute will be used to extrude the shapes.
+- If the 3D shapes are way too big or way too small, experiment with changing the scale factor. 
 
 More details here: :doc:`Theming`
-
 
 .. |addshapes| image:: add_shapes.png
    :scale: 50 %

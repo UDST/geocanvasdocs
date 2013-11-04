@@ -1,8 +1,8 @@
 Learn the Interface
 ===================
 
-.. image:: GeoCanvasAll.png
-   :scale: 25 %
+.. image:: GeoCanvasInterfaceMain.png
+   :scale: 50 %
 
 3D View
 -------
@@ -46,7 +46,7 @@ To capture a screenshot, first get the 3D view looking the way you'd like by nav
 - Select "Capture Screenshot" from the "View" menu
 - Use the keyboard shortcut: "Command-S" on Mac, or "Control-S" on Windows.
 
-Screenshots will be saved as PNG images in a folder named "screenshots" in the same place GeoCanvas is installed on your computer. The filename will be given a name starting with "img_" followed by the date and time, like this: img_2013-11-02_11-33-19.png, that is, img_YYYY-MM-DD_HH-MM-SS.png.
+Screenshots will be saved as PNG images in a folder named "screenshots" in the same place GeoCanvas is installed on your computer. The filename will be given a name starting with "img" followed by the date and time, like this: img_2013-11-02_11-33-19.png, that is, img_YYYY-MM-DD_HH-MM-SS.png.
 
 
 Layer Panel
