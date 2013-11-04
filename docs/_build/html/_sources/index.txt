@@ -16,5 +16,3 @@ Contents:
    Adding Shapes
    Adding Attributes
    Theming
-   Explore
-   Share Feedback
