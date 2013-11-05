@@ -19,118 +19,83 @@ The name current layer will be shown in blue. All other layer names will be show
 Visibility Toggle
 -----------------
 
-The control to the left of a layer's name in the layer panel is its :guilabel:`visibility toggle`. The :guilabel:`visibility toggle` indicates whether is layer is Off |layer_off|, 2D |layer_2d|, or 3D |layer_3d|.
+The control to the left of a layer's name in the layer panel is it's :guilabel:`visibility toggle`. The :guilabel:`visibility toggle` indicates whether is layer is Off, 2D, or 3D.
 
-- Base map layers can be Off |layer_off|, or 2D |layer_2d|. 
-- Shape layers can be Off |layer_off|, 2D |layer_2d|, or 3D |layer_3d|.
+- Base map layers can be Off, or 2D. 
+- Shape layers can be Off, 2D, or 3D.
 
 **To switch between modes, click on the icon.**
 
-.. note:: The `Visibility Limit`_ control (explained below) also determines the visibility of shape layers. If your layer is not appearing, first make sure it's in 2D or 3D mode, and then check its visibility limit.
+.. note:: The :guilabel:`visibility limit` control (explained below) also determines the visibility of shape layers. If your layer is not appearing, first make sure it's in 2D or 3D mode, and then check it's visibility limit.
 
-Show / Hide Controls
---------------------
+Show / Hide Layer Controls
+--------------------------
 
-The arrow to the right of the layer name shows and hides additional controls for each layer. There are a common set of controls shown for all layers, plus some that depend on the layer type, that is, whether layer is a base map layer or shape layer. 
+Shows additional controls for each layer. Which controls are shown depends on the type of layer - that is, whether the layer is a base map layer or shape layer. There are also a common set of controls shown for all layers
 
-Layer Up and Down
------------------
+Common Controls
+---------------
 
-|layerUp| and |layerDown| move layers up and down in the list. 
+Move Layer Up
+~~~~~~~~~~~~~
 
-Layers closer to the top of the list are drawn above layers lower in the list.
+.. image:: layerUp@2x.png
+   :scale: 50 %
+
+Move Layer Down
+~~~~~~~~~~~~~~~
+
+.. image:: layerDown@2x.png
+   :scale: 50 %
 
 Opacity
--------
+~~~~~~~
 
-The opacity slider controls how much you can see through the layer to layers below.
+
+Base Map Layer Controls
+-----------------------
 
 Background Image
-----------------
-
-The :guilabel:`Background Image` control is only available for base map layers. This drop down menu lets you select which set of images to use; e.g. Aerial photos, conventional street maps, labels, or stylized maps.
+~~~~~~~~~~~~~~~~
 
 .. image:: layercontrols-basemap.png
    :scale: 50 %
 
 
+Shape Layer Controls
+--------------------
+
 Outline Visibility
-------------------
-
-|outlineOn| This icon indicates outlines are shown. Click to hide. Only available for shape layers.
-
-|outlineOff| This icon indicates outlines are hidden. Click to show. Only available for shape layers.
+~~~~~~~~~~~~~~~~~~
 
 Delete Layer
-------------
+~~~~~~~~~~~~
 
-|layerDelete| Click to delete layer. Only available for shape layers.
+Visibility Limits
+~~~~~~~~~~~~~~~~~
 
-Visibility Limit
-----------------
+Fill Controls
+~~~~~~~~~~~~~
 
-|limitsIn|
+Fill Controls:
 
-|limitsOut| 
- 
-Click the |house| icon to make the layer *visible* at greater distances.
-
-Click the |globe| icon to make the layer *invisible* at greater distances.
-
-
-Theme Controls
---------------
-
-The remainder of the layer controls are described in the :doc:`Theming` section.
-
-
-.. |layerAdd| image:: layerAdd@2x.png
+.. image:: layercontrols-fill.png
    :scale: 50 %
 
-.. |layerDelete| image:: layerDelete@2x.png
+Attribute Source
+^^^^^^^^^^^^^^^^
+
+Theme Options
+^^^^^^^^^^^^^
+
+Extrusion Controls
+~~~~~~~~~~~~~~~~~~
+
+.. image:: layercontrols-extrusion.png
    :scale: 50 %
 
-.. |layerDown| image:: layerDown@2x.png
-   :scale: 50 %
+Attribute Source
+^^^^^^^^^^^^^^^^
 
-.. |layerUp| image:: layerUp@2x.png
-   :scale: 50 %
-
-.. |house| image:: house@2x.png
-   :scale: 50 %
-
-.. |globe| image:: globe@2x.png
-   :scale: 50 %
-
-.. |dataAdd| image:: dataAdd@2x.png
-   :scale: 50 %
-
-.. |dataDelete| image:: dataDelete@2x.png
-   :scale: 50 %
-
-.. |zoomExtents| image:: zoomextents@2x.png
-   :scale: 50 %
-
-.. |outlineOn| image:: outlineOn@2x.png
-   :scale: 50 %
-
-.. |outlineOff| image:: outlineOff@2x.png
-   :scale: 50 %
-
-.. |layer_off| image:: layer_off@2x.png
-   :scale: 50 %
-
-.. |layer_2d| image:: layer_2d@2x.png
-   :scale: 50 %
-
-.. |layer_3d| image:: layer_3d@2x.png
-   :scale: 50 %
-
-.. |limitsIn| image:: limitsIn.png
-   :scale: 50 %
-
-.. |limitsOut| image:: limitsOut.png
-   :scale: 50 %
-
-
-
+Theme Options
+^^^^^^^^^^^^^
