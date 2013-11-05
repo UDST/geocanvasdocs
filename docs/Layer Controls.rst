@@ -26,66 +26,62 @@ The control to the left of a layer's name in the layer panel is its :guilabel:`v
 
 **To switch between modes, click on the icon.**
 
-.. note:: The :guilabel:`visibility limit` control (explained below) also determines the visibility of shape layers. If your layer is not appearing, first make sure it's in 2D or 3D mode, and then check it's visibility limit.
+.. note:: The `Visibility Limit`_ control (explained below) also determines the visibility of shape layers. If your layer is not appearing, first make sure it's in 2D or 3D mode, and then check its visibility limit.
 
-Expanded Controls
+Show / Hide Controls
+--------------------
+
+The arrow to the right of the layer name shows and hides additional controls for each layer. There are a common set of controls shown for all layers, plus some that depend on the layer type, that is, whether layer is a base map layer or shape layer. 
+
+Layer Up and Down
 -----------------
 
-Shows additional controls for each layer. Which controls are shown depends on the type of layer - that is, whether the layer is a base map layer or shape layer. There are also a common set of controls shown for all layers
+|layerUp| and |layerDown| move layers up and down in the list. 
 
-Common Controls
----------------
-
-|layerUp| Move Layer Up
-
-|layerDown| Move Layer Down
+Layers closer to the top of the list are drawn above layers lower in the list.
 
 Opacity
+-------
 
-
-Base Map Layer Controls
------------------------
+The opacity slider controls how much you can see through the layer to layers below.
 
 Background Image
-~~~~~~~~~~~~~~~~
+----------------
+
+The :guilabel:`Background Image` control is only available for base map layers. This drop down menu lets you select which set of images to use; e.g. Aerial photos, conventional street maps, labels, or stylized maps.
 
 .. image:: layercontrols-basemap.png
    :scale: 50 %
 
 
-Shape Layer Controls
---------------------
-
 Outline Visibility
-~~~~~~~~~~~~~~~~~~
+------------------
 
-|outlineOn| This icon indicates outlines are shown. Click to hide.
+|outlineOn| This icon indicates outlines are shown. Click to hide. Only available for shape layers.
 
-|outlineOff| This icon indicates outlines are hidden. Click to show.
+|outlineOff| This icon indicates outlines are hidden. Click to show. Only available for shape layers.
 
 Delete Layer
-~~~~~~~~~~~~
+------------
 
-|layerDelete| Click to delete layer.
+|layerDelete| Click to delete layer. Only available for shape layers.
 
-Visibility Limits
-~~~~~~~~~~~~~~~~~
+Visibility Limit
+----------------
 
-For details
+|limitsIn|
 
-Fill Controls:
+|limitsOut| 
+ 
+Click the |house| icon to make the layer *visible* at greater distances.
 
-.. image:: layercontrols-fill.png
-   :scale: 50 %
+Click the |globe| icon to make the layer *invisible* at greater distances.
 
 
+Theme Controls
+--------------
 
-Extrusion Controls
-~~~~~~~~~~~~~~~~~~
-
-.. image:: layercontrols-extrusion.png
-   :scale: 50 %
-
+The remainder of the layer controls are described in the :doc:`Theming` section.
 
 
 .. |layerAdd| image:: layerAdd@2x.png
@@ -128,6 +124,12 @@ Extrusion Controls
    :scale: 50 %
 
 .. |layer_3d| image:: layer_3d@2x.png
+   :scale: 50 %
+
+.. |limitsIn| image:: limitsIn.png
+   :scale: 50 %
+
+.. |limitsOut| image:: limitsOut.png
    :scale: 50 %
 
 
