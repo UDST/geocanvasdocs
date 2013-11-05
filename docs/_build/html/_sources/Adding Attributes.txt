@@ -1,18 +1,18 @@
 Adding Attributes
 =================
 
-TODO: All about adding attributes.
+TODO
 
-Attributes can come from files or databases… (etc)
+Attributes can come from files or databases
 
 From File
 ---------
 
 .. image:: images/AddAttributesToLayer-File.png
-   :scale: 25 %
+   :scale: 50 %
 
 From Database
 -------------
 
 .. image:: images/AddAttributesToLayer-Database.png
-   :scale: 25 %
+   :scale: 50 %

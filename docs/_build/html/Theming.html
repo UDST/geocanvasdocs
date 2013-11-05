@@ -50,39 +50,55 @@
         
   <div class="section" id="theming">
 <h1>Theming<a class="headerlink" href="#theming" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="fill-controls">
-<h2>Fill Controls<a class="headerlink" href="#fill-controls" title="Permalink to this headline">¶</a></h2>
+<p><strong>Theming is how you visualize data.</strong></p>
+<p>In GeoCanvas, theming is done on a layer-by-layer basis. By theming a shape layer, you are determining how the shapes are colored or how tall they are when they are extruded into 3D volumes.</p>
+<p>Each shape layer has a set of theming controls located directly below the <em class="guilabel">visibility limit</em> controls. The theme controls are separated out into two tabs: the <strong>Fill</strong> tab and the <strong>Extrusion</strong> tab.</p>
+<p>To create a data visualization, you need to specify two main things: <em>the data source</em>, and <em>the aspect of the visualization that is controlled by that data.</em></p>
+<p>Accordingly, the <strong>Fill</strong> and <strong>Extrusion</strong> tabs each are split into two parts:</p>
+<ul class="simple">
+<li>Data Source (the top half)</li>
+<li>Theme Settings (the bottom half)</li>
+</ul>
+<p>The <em class="guilabel">Data Source</em> section looks the same on both tabs. There are two things to choose in this section; the <em class="guilabel">Data Set</em> and the <em class="guilabel">Data Field</em>.</p>
+<p>The <em class="guilabel">Data Set</em> is the original source of the data that you&#8217;d like to use to either color or extrude shapes. Some shape layers have built-in attributes - columns of data associated with shapes. These built-in attributes can be accessed by selecting &#8220;Indicators from this layer&#8221; in the <em class="guilabel">Data Set</em> drop down box. If you&#8217;ve added any additional attributes from files or database tables, you can select the name of the original file or table here.</p>
+<p>Once the data is selected, you&#8217;ll see that the <em class="guilabel">Data Field</em> drop down gets filled with a set of options that correspond to the numeric fields in the source data set.</p>
+<p>The <em class="guilabel">Data Field</em> is the column of data (a.k.a. the &#8220;indicator&#8221; or &#8220;attribute&#8221;) that you&#8217;ll be visualizing on each shape.</p>
+<div class="section" id="fill">
+<h2>Fill<a class="headerlink" href="#fill" title="Permalink to this headline">¶</a></h2>
+<p>Once you&#8217;ve selected a <em class="guilabel">Data Source</em> for Fill by choosing a <em class="guilabel">Data Set</em> and <em class="guilabel">Data Field</em> you specify how that gets translated into colors on shapes in the <em class="guilabel">Theme Settings</em> section. This section has three controls: <em class="guilabel">Colors</em>, <em class="guilabel">Intervals</em> and <em class="guilabel">Bins</em>.</p>
 <a class="reference internal image-reference" href="_images/layercontrols-fill.png"><img alt="_images/layercontrols-fill.png" src="_images/layercontrols-fill.png" style="width: 401.0px; height: 314.0px;" /></a>
-<div class="section" id="color-schemes">
-<h3>Color Schemes<a class="headerlink" href="#color-schemes" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="colors">
+<h3>Colors<a class="headerlink" href="#colors" title="Permalink to this headline">¶</a></h3>
+<p>Select a color scheme for the visualization.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Different color schemes provide different numbers of bins (explained below). Most of the schemes allow between 9 and 12 bins. Try different combinations of schemes and bins to see what works best for your data.</p>
+</div>
 </div>
 <div class="section" id="intervals">
 <h3>Intervals<a class="headerlink" href="#intervals" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="quantile">
-<h4>Quantile<a class="headerlink" href="#quantile" title="Permalink to this headline">¶</a></h4>
-</div>
-<div class="section" id="equal">
-<h4>Equal<a class="headerlink" href="#equal" title="Permalink to this headline">¶</a></h4>
-</div>
-<div class="section" id="custom">
-<h4>Custom<a class="headerlink" href="#custom" title="Permalink to this headline">¶</a></h4>
-</div>
+<ul class="simple">
+<li><strong>Quantile</strong></li>
+<li><strong>Equal</strong></li>
+<li><strong>Custom</strong></li>
+</ul>
+<p>TODO - Custom intervals dialog.</p>
 </div>
 <div class="section" id="bins">
 <h3>Bins<a class="headerlink" href="#bins" title="Permalink to this headline">¶</a></h3>
+<p>TODO</p>
 </div>
 </div>
 <div class="section" id="extrusion">
 <h2>Extrusion<a class="headerlink" href="#extrusion" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="_images/layercontrols-extrusion.png"><img alt="_images/layercontrols-extrusion.png" src="_images/layercontrols-extrusion.png" style="width: 384.0px; height: 313.0px;" /></a>
-<p>Agreement between Fill and Extrusion data sources.</p>
-<p>Building footprint example</p>
-<div class="section" id="scale-factors">
-<h3>Scale factors<a class="headerlink" href="#scale-factors" title="Permalink to this headline">¶</a></h3>
-<p>If things are too short, try a lower number.</p>
-<p>If things are too tall, try a higher number.</p>
-<p>Eg. If the attributes being visualized are very small, say around 0.001, and you want something that is .001 to be shown about 100 feet tall, 1 ft would have to equal <em>.00001</em>.</p>
-<p>Going the other way, if the attributes being visualized are very large, say around 10,000,000, if you want the shape to be extruded to 100 ft, 1 ft would have to equal <em>100,000</em>.</p>
+<p>TODO - Fill and Extrusion data sources are independent.</p>
+<p>TODO - Building footprint example.</p>
+<div class="section" id="scale-factor">
+<h3>Scale Factor<a class="headerlink" href="#scale-factor" title="Permalink to this headline">¶</a></h3>
+<p>If 3D extrusions are too short, try a lower value for units.</p>
+<p>If 3D extrusions are too tall, try a higher value for units.</p>
+<p>Typically experimenting by changing values by factors of ten gets you in the ballpark pretty quickly.</p>
 </div>
 </div>
 </div>

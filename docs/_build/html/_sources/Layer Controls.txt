@@ -8,18 +8,17 @@ At any time, only one layer can be the :guilabel:`current layer` even though man
 
 **To make a layer current, click its name in the layer panel.**
 
+The name current layer will be shown in blue. All other layer names will be shown in black. 
+
+.. note:: Only shape layers can be made the current, so clicking base map layer names will have no effect. This also means that when GeoCanvas starts, there will be no current layer, since there are only base map layers by default.
+
 - The current layer is the shape layer to which new attributes are added when :menuselection:`Add Attributes to Layer` is selected from the File menu. 
 - The current layer is also the selectable layer. Only shapes on the current layer can be selected with the selection tool.
-
-Only shape layers can be made the current layer. So when GeoCanvas starts, there is no current layer, since there are only base map layers to start.
-
-The name current layer will be shown in blue. All other layer names will be shown in black. (Clicking base map layer names has no effect.)
-
 
 Visibility Toggle
 -----------------
 
-The control to the left of a layer's name in the layer panel is its :guilabel:`visibility toggle`. The :guilabel:`visibility toggle` indicates whether is layer is Off |layer_off|, 2D |layer_2d|, or 3D |layer_3d|.
+The control to the left of a layer's name in the layer panel is its :guilabel:`visibility toggle`. The :guilabel:`visibility toggle` indicates whether the layer is Off |layer_off|, 2D |layer_2d|, or 3D |layer_3d|.
 
 - Base map layers can be Off |layer_off|, or 2D |layer_2d|. 
 - Shape layers can be Off |layer_off|, 2D |layer_2d|, or 3D |layer_3d|.
@@ -31,7 +30,7 @@ The control to the left of a layer's name in the layer panel is its :guilabel:`v
 Show / Hide Controls
 --------------------
 
-The arrow to the right of the layer name shows and hides additional controls for each layer. There are a common set of controls shown for all layers, plus some that depend on the layer type, that is, whether layer is a base map layer or shape layer. 
+The arrow to the right of the layer name shows and hides additional controls for each layer. There are a common set of controls shown for all layers, plus some that depend on the layer type, that is, whether the layer is a base map layer or shape layer. 
 
 Layer Up and Down
 -----------------
@@ -71,26 +70,26 @@ Visibility Limit
 
 This is the :guilabel:`visibility limit` control.
 
+|limitsIn|
+
 **A black line is shown beneath all of the zoom levels at which the current layer is visible.**
 
 - Click the |globe| icon to make the layer *visible* at greater distances.
 
 - Click the |house| icon to make the layer *hidden* at greater distances.
 
-|limitsIn|
 
 Each colored dash represents a :guilabel:`zoom level`. The zoom level corresponds to the distance of your viewpoint from the surface. Zoom levels toward the left are further from the surface.
 
-The magnifying glass is shown above the current zoom level. Change the current zoom level with the |zoomIn| :guilabel:`zoom in` and |zoomOut| :guilabel:`zoom out` buttons on the toolbar. 
+As a shortcut, you can also click directly on the colored dashes to set the visibility limit to a specific zoom level.
 
+The magnifying glass is shown above the current zoom level. Change the current zoom level with the |zoomIn| :guilabel:`zoom in` and |zoomOut| :guilabel:`zoom out` buttons on the toolbar. 
 
 When the magnifying glass is within the range of zoom levels with a black underline, (as shown below) the layer will be **visible**.
 |limitsIn|
 
 When the magnifying glass is outside the range of zoom levels with a black underline, (as shown below) the layer will be **hidden**.
 |limitsOut| 
-
-
 
 .. note:: While it's tempting to make all layers visible at the maximum possible distance, it's not always a good idea. The more shapes that are visible, the more likely things are to slow down. Depending on how much memory your computer has, showing too much at once could cause pretty significant performance issues.
 

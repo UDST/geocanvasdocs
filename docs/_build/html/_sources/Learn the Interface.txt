@@ -62,11 +62,8 @@ To capture a screenshot, first get the 3D view looking the way you'd like by nav
 
 Screenshots will be saved as PNG images in a folder named "screenshots" in the same place GeoCanvas is installed on your computer. The filename will be given a name starting with "img" followed by the date and time, like this: img_2013-11-02_11-33-19.png, that is, img_YYYY-MM-DD_HH-MM-SS.png.
 
-Panels
-------
-
 Layer Panel
-***********
+-----------
 
 Everything you see in the 3D view is organized into layers. Layers allow you to organize and independently control the appearance of different data sets. In GeoCanvas, there are two main types of layers - base map layers and shape layers.
 
@@ -75,12 +72,33 @@ Base map layers are built in to GeoCanvas. Each base map layer provides a set of
 Shape layers are groups of discreet geographic features, such as polygons representing building footprints, or points representing bus stops. Shape layers can come from two main types of sources: Files, or Databases. See the section above on shapes for details on where you can get shape data.
 
 Legend Panel
-************
+------------
 
-`… todo …`
+TODO
 
-Table Panel
+Toggling Visibility
+*******************
+
+Customizing
 ***********
 
-`… todo …`
+Table Panel
+-----------
+
+TODO
+
+Toggling Visibility
+*******************
+
+Current Table
+*************
+
+Show Selection Only
+*******************
+
+Zoom to Selection
+*****************
+
+Filters
+*******
 

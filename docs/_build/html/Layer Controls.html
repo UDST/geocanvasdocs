@@ -57,16 +57,19 @@
 <h2>Current Layer<a class="headerlink" href="#current-layer" title="Permalink to this headline">¶</a></h2>
 <p>At any time, only one layer can be the <em class="guilabel">current layer</em> even though many layers may be visible.</p>
 <p><strong>To make a layer current, click its name in the layer panel.</strong></p>
+<p>The name current layer will be shown in blue. All other layer names will be shown in black.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Only shape layers can be made the current, so clicking base map layer names will have no effect. This also means that when GeoCanvas starts, there will be no current layer, since there are only base map layers by default.</p>
+</div>
 <ul class="simple">
 <li>The current layer is the shape layer to which new attributes are added when <em class="menuselection">Add Attributes to Layer</em> is selected from the File menu.</li>
 <li>The current layer is also the selectable layer. Only shapes on the current layer can be selected with the selection tool.</li>
 </ul>
-<p>Only shape layers can be made the current layer. So when GeoCanvas starts, there is no current layer, since there are only base map layers to start.</p>
-<p>The name current layer will be shown in blue. All other layer names will be shown in black. (Clicking base map layer names has no effect.)</p>
 </div>
 <div class="section" id="visibility-toggle">
 <h2>Visibility Toggle<a class="headerlink" href="#visibility-toggle" title="Permalink to this headline">¶</a></h2>
-<p>The control to the left of a layer&#8217;s name in the layer panel is its <em class="guilabel">visibility toggle</em>. The <em class="guilabel">visibility toggle</em> indicates whether is layer is Off <a class="reference internal" href="_images/layer_off&#64;2x.png"><img alt="layer_off" src="_images/layer_off&#64;2x.png" style="width: 12.0px; height: 12.0px;" /></a>, 2D <a class="reference internal" href="_images/layer_2d&#64;2x.png"><img alt="layer_2d" src="_images/layer_2d&#64;2x.png" style="width: 12.0px; height: 12.0px;" /></a>, or 3D <a class="reference internal" href="_images/layer_3d&#64;2x.png"><img alt="layer_3d" src="_images/layer_3d&#64;2x.png" style="width: 12.0px; height: 12.0px;" /></a>.</p>
+<p>The control to the left of a layer&#8217;s name in the layer panel is its <em class="guilabel">visibility toggle</em>. The <em class="guilabel">visibility toggle</em> indicates whether the layer is Off <a class="reference internal" href="_images/layer_off&#64;2x.png"><img alt="layer_off" src="_images/layer_off&#64;2x.png" style="width: 12.0px; height: 12.0px;" /></a>, 2D <a class="reference internal" href="_images/layer_2d&#64;2x.png"><img alt="layer_2d" src="_images/layer_2d&#64;2x.png" style="width: 12.0px; height: 12.0px;" /></a>, or 3D <a class="reference internal" href="_images/layer_3d&#64;2x.png"><img alt="layer_3d" src="_images/layer_3d&#64;2x.png" style="width: 12.0px; height: 12.0px;" /></a>.</p>
 <ul class="simple">
 <li>Base map layers can be Off <a class="reference internal" href="_images/layer_off&#64;2x.png"><img alt="layer_off" src="_images/layer_off&#64;2x.png" style="width: 12.0px; height: 12.0px;" /></a>, or 2D <a class="reference internal" href="_images/layer_2d&#64;2x.png"><img alt="layer_2d" src="_images/layer_2d&#64;2x.png" style="width: 12.0px; height: 12.0px;" /></a>.</li>
 <li>Shape layers can be Off <a class="reference internal" href="_images/layer_off&#64;2x.png"><img alt="layer_off" src="_images/layer_off&#64;2x.png" style="width: 12.0px; height: 12.0px;" /></a>, 2D <a class="reference internal" href="_images/layer_2d&#64;2x.png"><img alt="layer_2d" src="_images/layer_2d&#64;2x.png" style="width: 12.0px; height: 12.0px;" /></a>, or 3D <a class="reference internal" href="_images/layer_3d&#64;2x.png"><img alt="layer_3d" src="_images/layer_3d&#64;2x.png" style="width: 12.0px; height: 12.0px;" /></a>.</li>
@@ -79,7 +82,7 @@
 </div>
 <div class="section" id="show-hide-controls">
 <h2>Show / Hide Controls<a class="headerlink" href="#show-hide-controls" title="Permalink to this headline">¶</a></h2>
-<p>The arrow to the right of the layer name shows and hides additional controls for each layer. There are a common set of controls shown for all layers, plus some that depend on the layer type, that is, whether layer is a base map layer or shape layer.</p>
+<p>The arrow to the right of the layer name shows and hides additional controls for each layer. There are a common set of controls shown for all layers, plus some that depend on the layer type, that is, whether the layer is a base map layer or shape layer.</p>
 </div>
 <div class="section" id="layer-up-and-down">
 <h2>Layer Up and Down<a class="headerlink" href="#layer-up-and-down" title="Permalink to this headline">¶</a></h2>
@@ -107,13 +110,14 @@
 <div class="section" id="visibility-limit">
 <h2>Visibility Limit<a class="headerlink" href="#visibility-limit" title="Permalink to this headline">¶</a></h2>
 <p>This is the <em class="guilabel">visibility limit</em> control.</p>
+<p><a class="reference internal" href="_images/limitsIn.png"><img alt="limitsIn" src="_images/limitsIn.png" style="width: 363.5px; height: 35.0px;" /></a></p>
 <p><strong>A black line is shown beneath all of the zoom levels at which the current layer is visible.</strong></p>
 <ul class="simple">
 <li>Click the <a class="reference internal" href="_images/globe&#64;2x.png"><img alt="globe" src="_images/globe&#64;2x.png" style="width: 16.0px; height: 16.0px;" /></a> icon to make the layer <em>visible</em> at greater distances.</li>
 <li>Click the <a class="reference internal" href="_images/house&#64;2x.png"><img alt="house" src="_images/house&#64;2x.png" style="width: 16.0px; height: 16.0px;" /></a> icon to make the layer <em>hidden</em> at greater distances.</li>
 </ul>
-<p><a class="reference internal" href="_images/limitsIn.png"><img alt="limitsIn" src="_images/limitsIn.png" style="width: 363.5px; height: 35.0px;" /></a></p>
 <p>Each colored dash represents a <em class="guilabel">zoom level</em>. The zoom level corresponds to the distance of your viewpoint from the surface. Zoom levels toward the left are further from the surface.</p>
+<p>As a shortcut, you can also click directly on the colored dashes to set the visibility limit to a specific zoom level.</p>
 <p>The magnifying glass is shown above the current zoom level. Change the current zoom level with the <a class="reference internal" href="_images/zoomIn&#64;2x.png"><img alt="zoomIn" src="_images/zoomIn&#64;2x.png" style="width: 16.0px; height: 16.0px;" /></a> <em class="guilabel">zoom in</em> and <a class="reference internal" href="_images/zoomOut&#64;2x.png"><img alt="zoomOut" src="_images/zoomOut&#64;2x.png" style="width: 16.0px; height: 16.0px;" /></a> <em class="guilabel">zoom out</em> buttons on the toolbar.</p>
 <p>When the magnifying glass is within the range of zoom levels with a black underline, (as shown below) the layer will be <strong>visible</strong>.
 <a class="reference internal" href="_images/limitsIn.png"><img alt="limitsIn" src="_images/limitsIn.png" style="width: 363.5px; height: 35.0px;" /></a></p>
