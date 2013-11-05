@@ -5,7 +5,6 @@ Fill Controls
 -------------
 
 .. image:: images/layercontrols-fill.png
-   :scale: 50 %
 
 Color Schemes
 ~~~~~~~~~~~~~
