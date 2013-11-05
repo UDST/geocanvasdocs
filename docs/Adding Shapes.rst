@@ -8,11 +8,11 @@ Shape layers can come from files or databases… (etc)
 From File
 ---------
 
-.. image:: AddNewShapeLayerDialog-File.png
+.. image:: images/AddNewShapeLayerDialog-File.png
    :scale: 25 %
 
 From Database
 -------------
 
-.. image:: AddNewShapeLayer-Database.png
+.. image:: images/AddNewShapeLayer-Database.png
    :scale: 25 %

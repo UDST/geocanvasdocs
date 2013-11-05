@@ -77,17 +77,17 @@ qthelp:
 	@echo
 	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
 	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/JDOTestDocs.qhcp"
+	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/GeoCanvas.qhcp"
 	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/JDOTestDocs.qhc"
+	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/GeoCanvas.qhc"
 
 devhelp:
 	$(SPHINXBUILD) -b devhelp $(ALLSPHINXOPTS) $(BUILDDIR)/devhelp
 	@echo
 	@echo "Build finished."
 	@echo "To view the help file:"
-	@echo "# mkdir -p $$HOME/.local/share/devhelp/JDOTestDocs"
-	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/JDOTestDocs"
+	@echo "# mkdir -p $$HOME/.local/share/devhelp/GeoCanvas"
+	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/GeoCanvas"
 	@echo "# devhelp"
 
 epub:

@@ -50,7 +50,7 @@ Background Image
 
 The :guilabel:`Background Image` control is only available for base map layers. This drop down menu lets you select which set of images to use; e.g. Aerial photos, conventional street maps, labels, or stylized maps.
 
-.. image:: layercontrols-basemap.png
+.. image:: images/layercontrols-basemap.png
    :scale: 50 %
 
 
@@ -84,52 +84,52 @@ Theme Controls
 The remainder of the layer controls are described in the :doc:`Theming` section.
 
 
-.. |layerAdd| image:: layerAdd@2x.png
+.. |layerAdd| image:: images/layerAdd@2x.png
    :scale: 50 %
 
-.. |layerDelete| image:: layerDelete@2x.png
+.. |layerDelete| image:: images/layerDelete@2x.png
    :scale: 50 %
 
-.. |layerDown| image:: layerDown@2x.png
+.. |layerDown| image:: images/layerDown@2x.png
    :scale: 50 %
 
-.. |layerUp| image:: layerUp@2x.png
+.. |layerUp| image:: images/layerUp@2x.png
    :scale: 50 %
 
-.. |house| image:: house@2x.png
+.. |house| image:: images/house@2x.png
    :scale: 50 %
 
-.. |globe| image:: globe@2x.png
+.. |globe| image:: images/globe@2x.png
    :scale: 50 %
 
-.. |dataAdd| image:: dataAdd@2x.png
+.. |dataAdd| image:: images/dataAdd@2x.png
    :scale: 50 %
 
-.. |dataDelete| image:: dataDelete@2x.png
+.. |dataDelete| image:: images/dataDelete@2x.png
    :scale: 50 %
 
-.. |zoomExtents| image:: zoomextents@2x.png
+.. |zoomExtents| image:: images/zoomextents@2x.png
    :scale: 50 %
 
-.. |outlineOn| image:: outlineOn@2x.png
+.. |outlineOn| image:: images/outlineOn@2x.png
    :scale: 50 %
 
-.. |outlineOff| image:: outlineOff@2x.png
+.. |outlineOff| image:: images/outlineOff@2x.png
    :scale: 50 %
 
-.. |layer_off| image:: layer_off@2x.png
+.. |layer_off| image:: images/layer_off@2x.png
    :scale: 50 %
 
-.. |layer_2d| image:: layer_2d@2x.png
+.. |layer_2d| image:: images/layer_2d@2x.png
    :scale: 50 %
 
-.. |layer_3d| image:: layer_3d@2x.png
+.. |layer_3d| image:: images/layer_3d@2x.png
    :scale: 50 %
 
-.. |limitsIn| image:: limitsIn.png
+.. |limitsIn| image:: images/limitsIn.png
    :scale: 50 %
 
-.. |limitsOut| image:: limitsOut.png
+.. |limitsOut| image:: images/limitsOut.png
    :scale: 50 %
 
 

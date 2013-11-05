@@ -61,15 +61,15 @@ This step is the heart of GeoCanvas, and where things get interesting! It's also
 
 More details here: :doc:`Theming`
 
-.. |addshapes| image:: add_shapes.png
+.. |addshapes| image:: images/add_shapes.png
    :scale: 50 %
 
-.. |addattributes| image:: add_attributes.png
+.. |addattributes| image:: images/add_attributes.png
    :scale: 50 %
 
-.. |colorshapes| image:: color_shapes.png
+.. |colorshapes| image:: images/color_shapes.png
    :scale: 50 %
 
-.. |visualizein3d| image:: visualize_in_3d.png
+.. |visualizein3d| image:: images/visualize_in_3d.png
    :scale: 50%
 

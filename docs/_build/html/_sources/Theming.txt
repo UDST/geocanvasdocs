@@ -4,7 +4,7 @@ Theming
 Fill Controls
 -------------
 
-.. image:: layercontrols-fill.png
+.. image:: images/layercontrols-fill.png
    :scale: 50 %
 
 Color Schemes
@@ -28,7 +28,7 @@ Bins
 Extrusion
 ---------
 
-.. image:: layercontrols-extrusion.png
+.. image:: images/layercontrols-extrusion.png
    :scale: 50 %
 
 Agreement between Fill and Extrusion data sources.

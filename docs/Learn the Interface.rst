@@ -1,31 +1,31 @@
 Learn the Interface
 ===================
 
-.. image:: GeoCanvasInterfaceMain.png
+.. image:: images/GeoCanvasInterfaceMain.png
    :scale: 50 %
 
-.. |pan| image:: hand@2x.png
+.. |pan| image:: images/hand@2x.png
    :scale: 50 %
 
-.. |tilt| image:: tilt@2x.png
+.. |tilt| image:: images/tilt@2x.png
    :scale: 50 %
 
-.. |lookdown| image:: viewTopDown@2x.png
+.. |lookdown| image:: images/viewTopDown@2x.png
    :scale: 50 %
 
-.. |zoomin| image:: zoomIn@2x.png
+.. |zoomin| image:: images/zoomIn@2x.png
    :scale: 50 %
 
-.. |zoomout| image:: zoomOut@2x.png
+.. |zoomout| image:: images/zoomOut@2x.png
    :scale: 50 %
 
-.. |select| image:: selectByClick@2x.png
+.. |select| image:: images/selectByClick@2x.png
    :scale: 50 %
 
-.. |deselect| image:: selectClear@2x.png
+.. |deselect| image:: images/selectClear@2x.png
    :scale: 50 %
 
-.. |camera| image:: camera@2x.png
+.. |camera| image:: images/camera@2x.png
    :scale: 50 %
 
 3D View

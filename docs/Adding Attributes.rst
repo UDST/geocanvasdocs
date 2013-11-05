@@ -8,11 +8,11 @@ Attributes can come from files or databases… (etc)
 From File
 ---------
 
-.. image:: AddAttributesToLayer-File.png
+.. image:: images/AddAttributesToLayer-File.png
    :scale: 25 %
 
 From Database
 -------------
 
-.. image:: AddAttributesToLayer-Database.png
+.. image:: images/AddAttributesToLayer-Database.png
    :scale: 25 %
