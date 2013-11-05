@@ -9,7 +9,7 @@ Each shape layer has a set of theming controls located directly below the :guila
 
 To create a data visualization, you need to specify two main things: *the data source*, and *the aspect of the visualization that is controlled by that data.*
 
-Accordingly, the **Fill** and **Extrusion** tabs each are split into two parts:
+Accordingly, the **Fill** and **Extrusion** tabs are split into two parts:
 
 - Data Source (the top half)
 - Theme Settings (the bottom half)
@@ -26,7 +26,7 @@ The :guilabel:`Data Field` is the column of data (a.k.a. the "indicator" or "att
 Fill
 ----
 
-Once you've selected a :guilabel:`Data Source` for Fill by choosing a :guilabel:`Data Set` and :guilabel:`Data Field` you specify how that gets translated into colors on shapes in the :guilabel:`Theme Settings` section. This section has three controls: :guilabel:`Colors`, :guilabel:`Intervals` and :guilabel:`Bins`.
+Once you've selected a :guilabel:`Data Source` for Fill by choosing a :guilabel:`Data Set` and :guilabel:`Data Field`, you specify how that gets translated into colors on shapes in the :guilabel:`Theme Settings` section. This section has three controls: :guilabel:`Colors`, :guilabel:`Bins` and :guilabel:`Intervals`.
  
 .. image:: images/layercontrols-fill.png
    :scale: 50 %
@@ -34,24 +34,48 @@ Once you've selected a :guilabel:`Data Source` for Fill by choosing a :guilabel:
 Colors
 ~~~~~~
 
-Select a color scheme for the visualization.
+Select a color scheme for the visualization from this drop down.
 
-.. note:: Different color schemes provide different numbers of bins (explained below). Most of the schemes allow between 9 and 12 bins. Try different combinations of schemes and bins to see what works best for your data.
+.. note:: Different color schemes provide different numbers of bins (explained below). Most of the schemes allow between 9 and 12 bins. The number of bins you can select is dependent on the color scheme, so the min. and max. values of the :guilabel:`Bins` slider will change with the color scheme selection. Try different combinations of schemes and bins to see what works best for your data.
 
+Bins
+~~~~
+
+The number of bins is the number of colors used to represent attributes on shapes. Each bin corresponds to a single color, and a minimum and maximum attribute value. If a shape's  attribute value falls within a bin's range, it is colored with the bin's color. 
+
+You can see the ranges associated with each bin in the :guilabel:`Legend Panel`.
+
+.. note:: If the legend panel is not visible, you can show it by selecting :menuselection:`Legend` from the :guilabel:`View` menu. 
+
+The minimum and maximum values associate with each bin are determined by the :guilabel:`Intervals` settings.
 
 Intervals
 ~~~~~~~~~
+
+The :guilabel:`Intervals` setting determines where the breakpoints between bins are set. There are three types:
 
 - **Quantile**
 - **Equal**
 - **Custom**
 
-TODO - Custom intervals dialog.
+Using **Quantile** intervals results in bins with approximately the same *number of shapes* per bin. There may be very different intervals between the breakpoint values.
 
-Bins
-~~~~
+Using **Equal** intervals results in bins with *breakpoint values* set at equal intervals. There may be very different numbers of shapes in each bin.
 
-TODO
+Using **Custom** intervals allows you to set the breakpoints between bins manually. This is done in the :guilabel:`Custom Intervals` dialog box. This can be accessed by clicking the :guilabel:`Custom…` button in the layer fill theme controls tab.
+
+.. image:: images/custom_intervals_logarithmic.png
+   :scale: 50%
+
+.. image:: images/custom_intervals_linear.png
+   :scale: 50%
+
+.. image:: images/custom_intervals.png
+   :scale: 50%
+
+
+Custom Intervals
+****************
 
 Extrusion
 ---------
@@ -72,3 +96,5 @@ If 3D extrusions are too short, try a lower value for units.
 If 3D extrusions are too tall, try a higher value for units.
 
 Typically experimenting by changing values by factors of ten gets you in the ballpark pretty quickly.
+
+

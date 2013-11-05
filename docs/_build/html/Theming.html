@@ -54,7 +54,7 @@
 <p>In GeoCanvas, theming is done on a layer-by-layer basis. By theming a shape layer, you are determining how the shapes are colored or how tall they are when they are extruded into 3D volumes.</p>
 <p>Each shape layer has a set of theming controls located directly below the <em class="guilabel">visibility limit</em> controls. The theme controls are separated out into two tabs: the <strong>Fill</strong> tab and the <strong>Extrusion</strong> tab.</p>
 <p>To create a data visualization, you need to specify two main things: <em>the data source</em>, and <em>the aspect of the visualization that is controlled by that data.</em></p>
-<p>Accordingly, the <strong>Fill</strong> and <strong>Extrusion</strong> tabs each are split into two parts:</p>
+<p>Accordingly, the <strong>Fill</strong> and <strong>Extrusion</strong> tabs are split into two parts:</p>
 <ul class="simple">
 <li>Data Source (the top half)</li>
 <li>Theme Settings (the bottom half)</li>
@@ -65,28 +65,43 @@
 <p>The <em class="guilabel">Data Field</em> is the column of data (a.k.a. the &#8220;indicator&#8221; or &#8220;attribute&#8221;) that you&#8217;ll be visualizing on each shape.</p>
 <div class="section" id="fill">
 <h2>Fill<a class="headerlink" href="#fill" title="Permalink to this headline">¶</a></h2>
-<p>Once you&#8217;ve selected a <em class="guilabel">Data Source</em> for Fill by choosing a <em class="guilabel">Data Set</em> and <em class="guilabel">Data Field</em> you specify how that gets translated into colors on shapes in the <em class="guilabel">Theme Settings</em> section. This section has three controls: <em class="guilabel">Colors</em>, <em class="guilabel">Intervals</em> and <em class="guilabel">Bins</em>.</p>
+<p>Once you&#8217;ve selected a <em class="guilabel">Data Source</em> for Fill by choosing a <em class="guilabel">Data Set</em> and <em class="guilabel">Data Field</em>, you specify how that gets translated into colors on shapes in the <em class="guilabel">Theme Settings</em> section. This section has three controls: <em class="guilabel">Colors</em>, <em class="guilabel">Bins</em> and <em class="guilabel">Intervals</em>.</p>
 <a class="reference internal image-reference" href="_images/layercontrols-fill.png"><img alt="_images/layercontrols-fill.png" src="_images/layercontrols-fill.png" style="width: 401.0px; height: 314.0px;" /></a>
 <div class="section" id="colors">
 <h3>Colors<a class="headerlink" href="#colors" title="Permalink to this headline">¶</a></h3>
-<p>Select a color scheme for the visualization.</p>
+<p>Select a color scheme for the visualization from this drop down.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Different color schemes provide different numbers of bins (explained below). Most of the schemes allow between 9 and 12 bins. Try different combinations of schemes and bins to see what works best for your data.</p>
+<p class="last">Different color schemes provide different numbers of bins (explained below). Most of the schemes allow between 9 and 12 bins. The number of bins you can select is dependent on the color scheme, so the min. and max. values of the <em class="guilabel">Bins</em> slider will change with the color scheme selection. Try different combinations of schemes and bins to see what works best for your data.</p>
 </div>
+</div>
+<div class="section" id="bins">
+<h3>Bins<a class="headerlink" href="#bins" title="Permalink to this headline">¶</a></h3>
+<p>The number of bins is the number of colors used to represent attributes on shapes. Each bin corresponds to a single color, and a minimum and maximum attribute value. If a shape&#8217;s  attribute value falls within a bin&#8217;s range, it is colored with the bin&#8217;s color.</p>
+<p>You can see the ranges associated with each bin in the <em class="guilabel">Legend Panel</em>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If the legend panel is not visible, you can show it by selecting <em class="menuselection">Legend</em> from the <em class="guilabel">View</em> menu.</p>
+</div>
+<p>The minimum and maximum values associate with each bin are determined by the <em class="guilabel">Intervals</em> settings.</p>
 </div>
 <div class="section" id="intervals">
 <h3>Intervals<a class="headerlink" href="#intervals" title="Permalink to this headline">¶</a></h3>
+<p>The <em class="guilabel">Intervals</em> setting determines where the breakpoints between bins are set. There are three types:</p>
 <ul class="simple">
 <li><strong>Quantile</strong></li>
 <li><strong>Equal</strong></li>
 <li><strong>Custom</strong></li>
 </ul>
-<p>TODO - Custom intervals dialog.</p>
+<p>Using <strong>Quantile</strong> intervals results in bins with approximately the same <em>number of shapes</em> per bin. There may be very different intervals between the breakpoint values.</p>
+<p>Using <strong>Equal</strong> intervals results in bins with <em>breakpoint values</em> set at equal intervals. There may be very different numbers of shapes in each bin.</p>
+<p>Using <strong>Custom</strong> intervals allows you to set the breakpoints between bins manually. This is done in the <em class="guilabel">Custom Intervals</em> dialog box. This can be accessed by clicking the <em class="guilabel">Custom…</em> button in the layer fill theme controls tab.</p>
+<a class="reference internal image-reference" href="_images/custom_intervals_logarithmic.png"><img alt="_images/custom_intervals_logarithmic.png" src="_images/custom_intervals_logarithmic.png" style="width: 316.0px; height: 489.0px;" /></a>
+<a class="reference internal image-reference" href="_images/custom_intervals_linear.png"><img alt="_images/custom_intervals_linear.png" src="_images/custom_intervals_linear.png" style="width: 316.0px; height: 489.0px;" /></a>
+<a class="reference internal image-reference" href="_images/custom_intervals.png"><img alt="_images/custom_intervals.png" src="_images/custom_intervals.png" style="width: 316.0px; height: 489.0px;" /></a>
+<div class="section" id="custom-intervals">
+<h4>Custom Intervals<a class="headerlink" href="#custom-intervals" title="Permalink to this headline">¶</a></h4>
 </div>
-<div class="section" id="bins">
-<h3>Bins<a class="headerlink" href="#bins" title="Permalink to this headline">¶</a></h3>
-<p>TODO</p>
 </div>
 </div>
 <div class="section" id="extrusion">
