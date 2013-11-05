@@ -1,8 +1,11 @@
 Theming
 =======
 
-Coloring Shapes
----------------
+Fill Controls
+-------------
+
+.. image:: layercontrols-fill.png
+   :scale: 50 %
 
 Color Schemes
 ~~~~~~~~~~~~~
@@ -22,8 +25,11 @@ Custom
 Bins
 ~~~~
 
-3D Extrusions
--------------
+Extrusion
+---------
+
+.. image:: layercontrols-extrusion.png
+   :scale: 50 %
 
 Agreement between Fill and Extrusion data sources.
 
