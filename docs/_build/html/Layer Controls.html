@@ -1,0 +1,139 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Layer Controls &mdash; GeoCanvas  documentation</title>
+    
+    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/theme_extras.js"></script>
+    <link rel="shortcut icon" href="_static/GeoCanvas.ico"/>
+    <link rel="top" title="GeoCanvas  documentation" href="index.html" />
+    <link rel="next" title="Theming" href="Theming.html" />
+    <link rel="prev" title="Adding Attributes" href="Adding Attributes.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="index.html">
+          <span>GeoCanvas  documentation</span></a></h1>
+        <h2 class="heading"><span>Layer Controls</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="Adding Attributes.html">Adding Attributes</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="Theming.html">Theming</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="layer-controls">
+<h1>Layer Controls<a class="headerlink" href="#layer-controls" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="current-layer">
+<h2>Current Layer<a class="headerlink" href="#current-layer" title="Permalink to this headline">¶</a></h2>
+<p>At any time, only one layer can be the <em class="guilabel">current layer</em> even though many layers may be visible.</p>
+<ul class="simple">
+<li>The current layer is the shape layer to which new attributes are added when <em class="menuselection">Add Attributes to Layer</em> is selected from the File menu.</li>
+<li>The current layer is also the selectable layer. Only shapes on the current layer can be selected with the selection tool.</li>
+</ul>
+<p>Only shape layers can be made the current layer. So when GeoCanvas starts, there is no current layer, since there are only base map layers to start.</p>
+<p><strong>To make a layer current, click its name in the layer panel.</strong></p>
+<p>The name current layer will be shown in blue. All other layer names will be shown in black. (Clicking base map layer names has no effect.)</p>
+</div>
+<div class="section" id="visibility-toggle">
+<h2>Visibility Toggle<a class="headerlink" href="#visibility-toggle" title="Permalink to this headline">¶</a></h2>
+<p>The control to the left of a layer&#8217;s name in the layer panel is its <em class="guilabel">visibility toggle</em>. The <em class="guilabel">visibility toggle</em> indicates whether is layer is Off <a class="reference internal" href="_images/layer_off&#64;2x.png"><img alt="layer_off" src="_images/layer_off&#64;2x.png" style="width: 12.0px; height: 12.0px;" /></a>, 2D <a class="reference internal" href="_images/layer_2d&#64;2x.png"><img alt="layer_2d" src="_images/layer_2d&#64;2x.png" style="width: 12.0px; height: 12.0px;" /></a>, or 3D <a class="reference internal" href="_images/layer_3d&#64;2x.png"><img alt="layer_3d" src="_images/layer_3d&#64;2x.png" style="width: 12.0px; height: 12.0px;" /></a>.</p>
+<ul class="simple">
+<li>Base map layers can be Off <a class="reference internal" href="_images/layer_off&#64;2x.png"><img alt="layer_off" src="_images/layer_off&#64;2x.png" style="width: 12.0px; height: 12.0px;" /></a>, or 2D <a class="reference internal" href="_images/layer_2d&#64;2x.png"><img alt="layer_2d" src="_images/layer_2d&#64;2x.png" style="width: 12.0px; height: 12.0px;" /></a>.</li>
+<li>Shape layers can be Off <a class="reference internal" href="_images/layer_off&#64;2x.png"><img alt="layer_off" src="_images/layer_off&#64;2x.png" style="width: 12.0px; height: 12.0px;" /></a>, 2D <a class="reference internal" href="_images/layer_2d&#64;2x.png"><img alt="layer_2d" src="_images/layer_2d&#64;2x.png" style="width: 12.0px; height: 12.0px;" /></a>, or 3D <a class="reference internal" href="_images/layer_3d&#64;2x.png"><img alt="layer_3d" src="_images/layer_3d&#64;2x.png" style="width: 12.0px; height: 12.0px;" /></a>.</li>
+</ul>
+<p><strong>To switch between modes, click on the icon.</strong></p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <a class="reference internal" href="#visibility-limit">Visibility Limit</a> control (explained below) also determines the visibility of shape layers. If your layer is not appearing, first make sure it&#8217;s in 2D or 3D mode, and then check its visibility limit.</p>
+</div>
+</div>
+<div class="section" id="show-hide-controls">
+<h2>Show / Hide Controls<a class="headerlink" href="#show-hide-controls" title="Permalink to this headline">¶</a></h2>
+<p>The arrow to the right of the layer name shows and hides additional controls for each layer. There are a common set of controls shown for all layers, plus some that depend on the layer type, that is, whether layer is a base map layer or shape layer.</p>
+</div>
+<div class="section" id="layer-up-and-down">
+<h2>Layer Up and Down<a class="headerlink" href="#layer-up-and-down" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="_images/layerUp&#64;2x.png"><img alt="layerUp" src="_images/layerUp&#64;2x.png" style="width: 12.0px; height: 12.0px;" /></a> and <a class="reference internal" href="_images/layerDown&#64;2x.png"><img alt="layerDown" src="_images/layerDown&#64;2x.png" style="width: 12.0px; height: 12.0px;" /></a> move layers up and down in the list.</p>
+<p>Layers closer to the top of the list are drawn above layers lower in the list.</p>
+</div>
+<div class="section" id="opacity">
+<h2>Opacity<a class="headerlink" href="#opacity" title="Permalink to this headline">¶</a></h2>
+<p>The opacity slider controls how much you can see through the layer to layers below.</p>
+</div>
+<div class="section" id="background-image">
+<h2>Background Image<a class="headerlink" href="#background-image" title="Permalink to this headline">¶</a></h2>
+<p>The <em class="guilabel">Background Image</em> control is only available for base map layers. This drop down menu lets you select which set of images to use; e.g. Aerial photos, conventional street maps, labels, or stylized maps.</p>
+<a class="reference internal image-reference" href="_images/layercontrols-basemap.png"><img alt="_images/layercontrols-basemap.png" src="_images/layercontrols-basemap.png" style="width: 224.0px; height: 115.0px;" /></a>
+</div>
+<div class="section" id="outline-visibility">
+<h2>Outline Visibility<a class="headerlink" href="#outline-visibility" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="_images/outlineOn&#64;2x.png"><img alt="outlineOn" src="_images/outlineOn&#64;2x.png" style="width: 16.0px; height: 16.0px;" /></a> This icon indicates outlines are shown. Click to hide. Only available for shape layers.</p>
+<p><a class="reference internal" href="_images/outlineOff&#64;2x.png"><img alt="outlineOff" src="_images/outlineOff&#64;2x.png" style="width: 16.0px; height: 16.0px;" /></a> This icon indicates outlines are hidden. Click to show. Only available for shape layers.</p>
+</div>
+<div class="section" id="delete-layer">
+<h2>Delete Layer<a class="headerlink" href="#delete-layer" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="_images/layerDelete&#64;2x.png"><img alt="layerDelete" src="_images/layerDelete&#64;2x.png" style="width: 12.0px; height: 12.0px;" /></a> Click to delete layer. Only available for shape layers.</p>
+</div>
+<div class="section" id="visibility-limit">
+<h2>Visibility Limit<a class="headerlink" href="#visibility-limit" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="_images/limitsIn.png"><img alt="limitsIn" src="_images/limitsIn.png" style="width: 363.5px; height: 35.0px;" /></a></p>
+<p><a class="reference internal" href="_images/limitsOut.png"><img alt="limitsOut" src="_images/limitsOut.png" style="width: 363.5px; height: 35.0px;" /></a></p>
+<p>Click the <a class="reference internal" href="_images/house&#64;2x.png"><img alt="house" src="_images/house&#64;2x.png" style="width: 16.0px; height: 16.0px;" /></a> icon to make the layer <em>visible</em> at greater distances.</p>
+<p>Click the <a class="reference internal" href="_images/globe&#64;2x.png"><img alt="globe" src="_images/globe&#64;2x.png" style="width: 16.0px; height: 16.0px;" /></a> icon to make the layer <em>invisible</em> at greater distances.</p>
+</div>
+<div class="section" id="theme-controls">
+<h2>Theme Controls<a class="headerlink" href="#theme-controls" title="Permalink to this headline">¶</a></h2>
+<p>The remainder of the layer controls are described in the <a class="reference internal" href="Theming.html"><em>Theming</em></a> section.</p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="Adding Attributes.html">Adding Attributes</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="Theming.html">Theming</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Synthicity.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

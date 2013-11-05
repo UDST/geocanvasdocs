@@ -1,0 +1,130 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Getting Started &mdash; GeoCanvas  documentation</title>
+    
+    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/print.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/theme_extras.js"></script>
+    <link rel="shortcut icon" href="_static/GeoCanvas.ico"/>
+    <link rel="top" title="GeoCanvas  documentation" href="index.html" />
+    <link rel="next" title="Learn the Interface" href="Learn the Interface.html" />
+    <link rel="prev" title="Overview" href="Overview.html" /> 
+  </head>
+  <body>
+      <div class="header"><h1 class="heading"><a href="index.html">
+          <span>GeoCanvas  documentation</span></a></h1>
+        <h2 class="heading"><span>Getting Started</span></h2>
+      </div>
+      <div class="topnav">
+      
+        <p>
+        «&#160;&#160;<a href="Overview.html">Overview</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="Learn the Interface.html">Learn the Interface</a>&#160;&#160;»
+        </p>
+
+      </div>
+      <div class="content">
+        
+        
+  <div class="section" id="getting-started">
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<p>This section gives a high level overview of using GeoCanvas. Read this first to get an idea of what GeoCanvas does. This may be enough to get you started if you&#8217;re familiar with geographic information systems (GIS) or graphics applications that use layers to organize data.</p>
+<p>The rest of the documentation fills in the details, and will be your main source of answers when you&#8217;ve got questions about how to do things, click by click.</p>
+<p>Using GeoCanvas is deceptively simple.
+There are only four main steps:</p>
+<ol class="arabic simple">
+<li>Add shapes</li>
+<li>Add attributes</li>
+<li>Color shapes</li>
+<li>Visualize in 3D</li>
+</ol>
+<div class="section" id="addshapes-add-shapes">
+<h2><a class="reference internal" href="_images/add_shapes.png"><img alt="addshapes" src="_images/add_shapes.png" style="width: 56.0px; height: 56.0px;" /></a> Add Shapes<a class="headerlink" href="#addshapes-add-shapes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>From the File menu, select <em class="menuselection">New Shape Layer…</em></li>
+<li>Select a shape (.shp) file OR connect to a PostGIS database and choose a table with geometry.</li>
+<li>Type a name in the <em class="guilabel">Layer Name</em> field and click <em class="guilabel">OK</em>.</li>
+<li>A new shape layer is added to the layer list.</li>
+</ul>
+<p>More details here: <a class="reference internal" href="Adding Shapes.html"><em>Adding Shapes</em></a></p>
+</div>
+<div class="section" id="addattributes-add-attributes">
+<h2><a class="reference internal" href="_images/add_attributes.png"><img alt="addattributes" src="_images/add_attributes.png" style="width: 56.0px; height: 56.0px;" /></a> Add Attributes<a class="headerlink" href="#addattributes-add-attributes" title="Permalink to this headline">¶</a></h2>
+<p>Note that this step <em>isn&#8217;t</em> necessary if the layer you added already has attributes you want to visualize built-in! This is often the case with shapefiles. This step <em>is</em> required if the data you want to visualize is from a different file or table than the shapes.</p>
+<ul class="simple">
+<li>In the <em class="guilabel">layer panel</em>, click on the name of the shape layer you just added. This will make it the current layer, which is indicated with blue text.</li>
+<li>From the File menu, select <em class="menuselection">Add Attributes to Layer…</em></li>
+<li>Select a file with attributes to join to the current shape layer, and specify which field to join to.</li>
+<li>Click <em class="guilabel">OK</em>. You can then select the file or table you just added to the layer as a <em class="guilabel">data set</em> for that layer. More on that in the next step.</li>
+</ul>
+<p>More details here: <a class="reference internal" href="Adding Attributes.html"><em>Adding Attributes</em></a></p>
+</div>
+<div class="section" id="colorshapes-color-shapes">
+<h2><a class="reference internal" href="_images/color_shapes.png"><img alt="colorshapes" src="_images/color_shapes.png" style="width: 59.0px; height: 42.0px;" /></a> Color Shapes<a class="headerlink" href="#colorshapes-color-shapes" title="Permalink to this headline">¶</a></h2>
+<p>Now that you&#8217;ve got shapes and attributes, you use the attributes to paint the shapes, that is to &#8220;theme&#8221; them.</p>
+<p>Theming is done on a layer by layer basis, so the controls for theming are located in the layer panel, and accessible for each layer.</p>
+<ul class="simple">
+<li>Click the arrow to the right of the layer name you&#8217;d like to theme. This reveals the layer controls.</li>
+<li>From the <em class="guilabel">Data Set</em> drop down box, select the source of the attributes you&#8217;d like to visualize. You can use attributes native to the shape layer, or ones that you add yourself.</li>
+<li>Pick the specific attribute to use for theming from the <em class="guilabel">Data Field</em> drop down box.</li>
+<li>Select a color scheme, a type of interval, and a number of bins. Generally, more bins look better. The particulars of what all that means will be explained in the detailed theming section.</li>
+</ul>
+<p>More details here: <a class="reference internal" href="Theming.html"><em>Theming</em></a></p>
+</div>
+<div class="section" id="visualizein3d-visualize-in-3d">
+<h2><a class="reference internal" href="_images/visualize_in_3d.png"><img alt="visualizein3d" src="_images/visualize_in_3d.png" style="width: 56.0px; height: 56.0px;" /></a> Visualize in 3D<a class="headerlink" href="#visualizein3d-visualize-in-3d" title="Permalink to this headline">¶</a></h2>
+<p>This step is the heart of GeoCanvas, and where things get interesting! It&#8217;s also the easiest part.</p>
+<ul class="simple">
+<li>At the bottom of the layer controls for the active layer, click the <em class="guilabel">Extrusion</em> tab. This will automatically show the layer in 3D, which is indicated by the cube icon next to the layer name.</li>
+<li>Choose the <em class="guilabel">Data Set</em> and <em class="guilabel">Data Field</em> as you did to color the shapes. The values of the selected attribute will be used to extrude the shapes.</li>
+<li>If the 3D shapes are way too big or way too small, experiment with changing the scale factor.</li>
+</ul>
+<p>More details here: <a class="reference internal" href="Theming.html"><em>Theming</em></a></p>
+</div>
+</div>
+
+
+      </div>
+      <div class="bottomnav">
+      
+        <p>
+        «&#160;&#160;<a href="Overview.html">Overview</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        &#160;&#160;::&#160;&#160;
+        <a href="Learn the Interface.html">Learn the Interface</a>&#160;&#160;»
+        </p>
+
+      </div>
+
+    <div class="footer">
+        &copy; Copyright 2013, Synthicity.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
