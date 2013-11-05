@@ -13,7 +13,6 @@ Contents:
    :maxdepth: 2
 
    Overview
-   Installation
    Getting Started
    Learn the Interface
    Adding Shapes

@@ -1,9 +1,7 @@
 Adding Attributes
 =================
 
-TODO
-
-Attributes can come from files or databases
+Attributes can come from files or databases.
 
 From File
 ---------

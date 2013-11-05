@@ -1,8 +1,6 @@
 Adding Shapes
 =============
 
-TODO
-
 Shape layers can come from files or databases.
 
 From File
