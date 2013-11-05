@@ -15,7 +15,7 @@ Contents:
    Overview
    Getting Started
    Learn the Interface
-   Layer Controls
    Adding Shapes
    Adding Attributes
+   Layer Controls
    Theming
