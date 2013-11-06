@@ -16,6 +16,8 @@ What's working? What's not? What do you wish it would do? How do you use it, or 
 
 Looking forward to hearing from you!
 
+.. note:: This documentation will be evolving over the next weeks as well, so check in frequently for updates.
+
 Installation
 ------------
 

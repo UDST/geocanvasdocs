@@ -53,14 +53,37 @@
         
   <div class="section" id="adding-shapes">
 <h1>Adding Shapes<a class="headerlink" href="#adding-shapes" title="Permalink to this headline">¶</a></h1>
-<p>Shape layers can come from files or databases.</p>
+<p>All shapes in GeoCanvas are organized into layers. To add new shapes, you add a new layer.</p>
+<ul class="simple">
+<li>From the File menu, select <em class="menuselection">New Shape Layer…</em></li>
+</ul>
+<p>The &#8220;Add New Shape Layer&#8221; dialog box will appear.</p>
+<p>Here you can choose the source of the shapes. You have two main options, whether to load shapes <strong>from a file</strong>, or <strong>from a database</strong>. You&#8217;ll have a different set of options depending on that choice.</p>
 <div class="section" id="from-file">
 <h2>From File<a class="headerlink" href="#from-file" title="Permalink to this headline">¶</a></h2>
+<p>To load shapes from a file, select &#8220;File&#8221; on the left. Currently, GeoCanvas supports loading from files in &#8220;shapefile&#8221; format, which have a &#8221;.shp&#8221; extension.</p>
 <a class="reference internal image-reference" href="_images/AddNewShapeLayerDialog-File.png"><img alt="_images/AddNewShapeLayerDialog-File.png" src="_images/AddNewShapeLayerDialog-File.png" style="width: 620.0px; height: 672.0px;" /></a>
+<ol class="arabic simple">
+<li>Click on the &#8220;Browse..&#8221; button, select a file from the dialog that appears, then click OK.</li>
+<li>You can then either keep the layer name that GeoCanvas suggests, which is just the name of the file, minus the .shp extension, or you can enter any name of your choosing in the &#8220;Layer Name&#8221; field at the bottom of the dialog.</li>
+<li>Click &#8220;OK&#8221;</li>
+<li>The layer will be added to the layer panel, with the name you gave it.</li>
+<li>Shapes will start to appear in the 3D view, if you are zoomed in close enough. If it&#8217;s a large file, you&#8217;ll see the progress of the shape loading as progress bar underneath the layer name.</li>
+<li>If you don&#8217;t see the shapes you loaded, check to be sure the layer is turned on, and check the <span class="target" id="visibility-limit">Visibility Limit</span> control to be sure you&#8217;re within the layer&#8217;s visibility limits. You may need to pan around or zoom in to see the shapes. See the <a class="reference internal" href="Layer Controls.html"><em>Layer Controls</em></a> section for more info.</li>
+</ol>
 </div>
 <div class="section" id="from-database">
 <h2>From Database<a class="headerlink" href="#from-database" title="Permalink to this headline">¶</a></h2>
+<p>To load shapes from a database table, select &#8220;Database&#8221; on the left.</p>
 <a class="reference internal image-reference" href="_images/AddNewShapeLayer-Database.png"><img alt="_images/AddNewShapeLayer-Database.png" src="_images/AddNewShapeLayer-Database.png" style="width: 620.0px; height: 584.0px;" /></a>
+<ol class="arabic simple">
+<li>Enter the Host, Port, Username, Password, Database, and Table for the database to which you&#8217;d like to connect, then click &#8220;Connect.&#8221;</li>
+</ol>
+<ul class="simple">
+<li>GeoCanvas supports connecting to PostGIS databases, and for adding shapes, requires connecting to a table that has geometric data.</li>
+<li>Once a successful connection has been made, you&#8217;ll need to select which field in the table contains the <em>Geometry</em> (i.e. the shapes), and which field contains the unique shape ID&#8217;s.</li>
+<li>Then, follow steps 2-6 above under &#8220;From File&#8221;</li>
+</ul>
 </div>
 </div>
 

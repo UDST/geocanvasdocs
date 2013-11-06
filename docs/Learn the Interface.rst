@@ -74,8 +74,6 @@ Shape layers are groups of discreet geographic features, such as polygons repres
 Legend Panel
 ------------
 
-TODO
-
 Toggling Visibility
 *******************
 
@@ -84,8 +82,6 @@ Customizing
 
 Table Panel
 -----------
-
-TODO
 
 Toggling Visibility
 *******************
