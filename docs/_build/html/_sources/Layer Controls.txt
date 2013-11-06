@@ -10,7 +10,7 @@ At any time, only one layer can be the :guilabel:`current layer` even though man
 
 The name current layer will be shown in blue. All other layer names will be shown in black. 
 
-.. note:: Only shape layers can be made the current, so clicking base map layer names will have no effect. This also means that when GeoCanvas starts, there will be no current layer, since there are only base map layers by default.
+.. note:: Only shape layers can be made current, so clicking base map layer names will have no effect. This also means that when GeoCanvas starts, there will be no current layer, since there are only base map layers by default.
 
 - The current layer is the shape layer to which new attributes are added when :menuselection:`Add Attributes to Layer` is selected from the File menu. 
 - The current layer is also the selectable layer. Only shapes on the current layer can be selected with the selection tool.

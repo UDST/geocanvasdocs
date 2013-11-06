@@ -8,15 +8,15 @@ In just a few steps, you can visualize attributes of anything that can be shown 
 Private Beta
 ------------
 
-We are just getting started with GeoCanvas, and we want to make it your go-to tool for spatial data visualization. We really appreciate the time you're taking as a beta tester, and your feedback is essential to us! 
+We are just getting started with GeoCanvas, and we want to make it your go-to tool for spatial data visualization. We really appreciate the time you're taking as a beta tester, and your feedback is essential to us. 
 
-What's working? What's not? What do you wish it would do? How do you use it, or how would you like to use it? Any other software it should play nicely with to make your life easier? We want to know the nitty-gritty.
+What's working? What's not? What do you wish it would do? How do you use it, or how would you like to use it? What other software it should play well with to make your life easier? We want to know!
 
 **To get in touch, use the "Send Feedback…" link in the GeoCanvas "Help" menu.**
 
 Looking forward to hearing from you!
 
-.. note:: This documentation will be evolving over the next weeks as well, so check in frequently for updates.
+.. note:: This documentation will be evolving over the next few weeks, so please check in frequently for updates.
 
 Installation
 ------------

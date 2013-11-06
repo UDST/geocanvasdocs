@@ -85,29 +85,63 @@
 </div>
 <div class="section" id="legend-panel">
 <h2>Legend Panel<a class="headerlink" href="#legend-panel" title="Permalink to this headline">¶</a></h2>
+<p>The Legend Panel contains a legend showing the minimum and maximum values associated with each color.  Only one legend is shown at a time. The active legend corresponds to the most recent attribute (i.e. Data Field) selected for theming, which is reflected in the legend&#8217;s title.</p>
 <div class="section" id="toggling-visibility">
 <h3>Toggling Visibility<a class="headerlink" href="#toggling-visibility" title="Permalink to this headline">¶</a></h3>
+<p>The legend can be turned on and off by selecting <em class="menuselection">Legend</em> from the <em class="guilabel">View</em> menu.</p>
 </div>
 <div class="section" id="customizing">
 <h3>Customizing<a class="headerlink" href="#customizing" title="Permalink to this headline">¶</a></h3>
+<p>To customize the legend, change the theme settings for the layer to which it corresponds. See the <a class="reference internal" href="Layer Controls.html"><em>Layer Controls</em></a> section for details on modifying the color scheme and breakpoints.</p>
 </div>
 </div>
 <div class="section" id="table-panel">
 <h2>Table Panel<a class="headerlink" href="#table-panel" title="Permalink to this headline">¶</a></h2>
+<p>The Table Panel gives you a tabular view of the data in each shape layer.</p>
 <div class="section" id="id1">
 <h3>Toggling Visibility<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>The table panel can be turned on and off by selecting <em class="menuselection">Table</em> from the <em class="guilabel">View</em> menu.</p>
 </div>
 <div class="section" id="current-table">
 <h3>Current Table<a class="headerlink" href="#current-table" title="Permalink to this headline">¶</a></h3>
+<p>The drop down box in the upper left of the table panel contains a list of all the current shape layers. Select a layer here to see it in the table.</p>
 </div>
 <div class="section" id="show-selection-only">
 <h3>Show Selection Only<a class="headerlink" href="#show-selection-only" title="Permalink to this headline">¶</a></h3>
+<p>The &#8220;Show Selection Only&#8221; checkbox works in conjunction with the selection tools in the toolbar. Here&#8217;s a typical workflow that is useful for finding out details of specific shapes in the 3D view.</p>
+<ul class="simple">
+<li>Make the selection tool active by clicking on its toolbar icon: <a class="reference internal" href="_images/selectByClick&#64;2x.png"><img alt="select" src="_images/selectByClick&#64;2x.png" style="width: 16.0px; height: 16.0px;" /></a>.</li>
+<li>Make a shape layer active by clicking on its name in the layer panel. This will make it the current layer, and selectable. See the <a class="reference internal" href="Layer Controls.html"><em>Layer Controls</em></a> section for more on the &#8220;current layer&#8221; concept.</li>
+<li>Click on some shapes in the 3D view. Be sure you&#8217;re zoomed in close enough to see them first!</li>
+<li>Click &#8220;Show Selection Only&#8221; in the table view. <strong>This will cause only the items that you selected in the 3d view to show up in the table.</strong></li>
+<li>To all deselect items in the 3D view, click the de-select toolbar button: <a class="reference internal" href="_images/selectClear&#64;2x.png"><img alt="deselect" src="_images/selectClear&#64;2x.png" style="width: 16.0px; height: 16.0px;" /></a>.</li>
+</ul>
 </div>
 <div class="section" id="zoom-to-selection">
 <h3>Zoom to Selection<a class="headerlink" href="#zoom-to-selection" title="Permalink to this headline">¶</a></h3>
+<p>The &#8220;Zoom to Selection&#8221; feature is used to automatically zoom the 3D view to shapes you select in the table.</p>
+<p>To try it out, do this:</p>
+<ul class="simple">
+<li>First deselect all shapes, using the <em class="guilabel">Deselect All</em> tool: <a class="reference internal" href="_images/selectClear&#64;2x.png"><img alt="deselect" src="_images/selectClear&#64;2x.png" style="width: 16.0px; height: 16.0px;" /></a>.</li>
+<li>Be sure the current layer in the layer panel is the same as the layer shown in the table view.</li>
+<li>Be sure the box next to &#8220;Zoom to Selection&#8221; is checked.</li>
+<li>Click on an item in the <em>table</em> view.</li>
+<li>If the item is not in the 3D view already, the 3D view will automatically pan over to show you the item you selected.</li>
+<li>To turn off this behavior, un-check the box next to &#8220;Zoom to Selection&#8221;</li>
+</ul>
 </div>
 <div class="section" id="filters">
 <h3>Filters<a class="headerlink" href="#filters" title="Permalink to this headline">¶</a></h3>
+<p>You can restrict the items in the table view by applying filters.</p>
+<p>To apply a filter:</p>
+<ul class="simple">
+<li>Set the filter criteria you&#8217;d like to use with the drop downs and text field(s) to the right of the &#8220;Apply filter&#8221; label, at the upper right of the table panel.</li>
+<li>Then, check the box next to &#8220;Apply filter&#8221; and your criteria will be used to filter the table. Only records that meet the criteria will be shown.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you wish, you can then use the keyboard shortcut for &#8220;Select All&#8221; - Command-A on Mac, and Control-A on Windows - on the table. This will highlight all the shapes that meet your criteria in <strong>both</strong> the table view and the 3d view. This is a good way to find shapes with certain attributes in the 3d view.</p>
+</div>
 </div>
 </div>
 </div>

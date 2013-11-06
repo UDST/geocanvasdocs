@@ -7,7 +7,7 @@ In GeoCanvas, theming is done on a layer-by-layer basis. By theming a shape laye
 
 Each shape layer has a set of theming controls located directly below the :guilabel:`visibility limit` controls. The theme controls are separated out into two tabs: the **Fill** tab and the **Extrusion** tab.
 
-To create a data visualization, you need to specify two main things: *the data source*, and *the aspect of the visualization that is controlled by that data.*
+To create a data visualization, you need to specify two main things: *the Data Source*, and *the Theme Settings*.
 
 Accordingly, the **Fill** and **Extrusion** tabs are split into two parts:
 
@@ -94,7 +94,7 @@ The **Extrusion** tab lets you choose what attributes are used to calculate the 
 
 The Data Set and Data Field options work just like the corresponding fields in the Fill tab.
 
-.. note:: The Data Set and Data Field for extrusions are INDEPENDENT from the Fill tab's controls for Data Set and Data Field. This means that you can choose one attribute to color shapes, and a different attribute to determine the shape's height! If you want them to be the same, you need to set them to the same values explicitly.
+.. note:: The Data Set and Data Field for extrusions are INDEPENDENT from the Fill tab's controls for Data Set and Data Field. This means that you can choose one attribute to color shapes, and a different attribute to determine the shape's height. If you want them to be the same, you need to set them to the same values explicitly.
 
 
 .. image:: images/layercontrols-extrusion.png
