@@ -53,7 +53,24 @@
         
   <div class="section" id="adding-attributes">
 <h1>Adding Attributes<a class="headerlink" href="#adding-attributes" title="Permalink to this headline">¶</a></h1>
-<p>Attributes can come from files or databases.</p>
+<div class="section" id="what-are-attributes">
+<h2>What are Attributes?<a class="headerlink" href="#what-are-attributes" title="Permalink to this headline">¶</a></h2>
+<p><strong>Attributes</strong>, in the most general sense, are values associated with shapes. For example, if you have a set of shapes that represent states, each one might have a <em>population</em> attribution and a <em>land area</em> attribute.</p>
+<p>Sometimes attributes are also called <em>indicators</em> when they are calculated values, as opposed to measured values.</p>
+<p>If you&#8217;re familiar with databases, you might consider each shape as a record and an attribute as a field. Or, in spreadsheet terms, you might have a table of shapes, with each row representing one shape, and each column representing an attribute of that shape.</p>
+<p>Attributes are often saved with shapes (as is the case with shapefiles.) GeoCanvas will automatically load attributes from shapefiles and database tables when you load shape layers that contain such data.</p>
+<p>However, you may want to add additional attributes to a shape layer. To do so, follow the steps below.</p>
+<p>Either:</p>
+<ol class="arabic simple">
+<li>Click on the name of a shape layer in the layer list to make it current. The name will turn blue. Note that you can&#8217;t add attributes to base map layers, so clicking their names will have no effect.</li>
+<li>Then, select <em class="menuselection">Add Attributes to Layer</em> from the <em class="guilabel">File</em> menu, and follow the instructions in the dialog box that appears.</li>
+</ol>
+<p><strong>OR</strong></p>
+<ol class="arabic simple">
+<li>Click the arrow to the right of the layer to which you&#8217;d like to add attributes, and the layer controls for that layer will appear.</li>
+<li>Click the <a class="reference internal" href="_images/dataAdd&#64;2x.png"><img alt="dataAdd" src="_images/dataAdd&#64;2x.png" style="width: 12.0px; height: 12.0px;" /></a> <em class="guilabel">Add Attributes</em> button on the right side of the dialog and follow the instructions in the dialog box that appears.</li>
+</ol>
+</div>
 <div class="section" id="from-file">
 <h2>From File<a class="headerlink" href="#from-file" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="_images/AddAttributesToLayer-File.png"><img alt="_images/AddAttributesToLayer-File.png" src="_images/AddAttributesToLayer-File.png" style="width: 809.0px; height: 597.0px;" /></a>
