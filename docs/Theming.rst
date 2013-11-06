@@ -62,39 +62,57 @@ Using **Quantile** intervals results in bins with approximately the same *number
 
 Using **Equal** intervals results in bins with *breakpoint values* set at equal intervals. There may be very different numbers of shapes in each bin.
 
-Using **Custom** intervals allows you to set the breakpoints between bins manually. This is done in the :guilabel:`Custom Intervals` dialog box. This can be accessed by clicking the :guilabel:`Custom…` button in the layer fill theme controls tab.
+Using **Custom** intervals allows you to set the breakpoints between bins manually. This is done in the :guilabel:`Custom Intervals` dialog box, which can be opened by clicking the :guilabel:`Custom…` button.
 
-.. image:: images/custom_intervals_logarithmic.png
-   :scale: 50%
+There are a few ways you can use the :guilabel:`Custom Interval` dialog. 
 
-.. image:: images/custom_intervals_linear.png
-   :scale: 50%
+**Manual Entry**
+
+Specify each value, then click :guilabel:`Apply`
 
 .. image:: images/custom_intervals.png
    :scale: 50%
 
+**Linear Breaks**
 
-Custom Intervals
-****************
+With :guilabel:`Advanced` checked, enter the minimum and maximum values, then click :guilabel:`Use linear breaks`, and the intermediate values will be calculated as set of even intervals between the start and end value. Then, click :guilabel:`Apply`
+
+.. image:: images/custom_intervals_linear.png
+   :scale: 50%
+
+**Logarithmic Breaks**
+
+With :guilabel:`Advanced` checked, enter the minimum and maximum values, then click :guilabel:`Use logarithmic breaks`, and the intermediate values will be calculated as set of intervals between the start and end value, spaced logarithmically. You have the option of specifying the logarithmic base as well. Then, click :guilabel:`Apply`
+
+.. image:: images/custom_intervals_logarithmic.png
+   :scale: 50%
 
 Extrusion
 ---------
 
+The **Extrusion** tab lets you choose what attributes are used to calculate the height of shapes. This allows you to turn shapes into 3D volumes, i.e. to "extrude" them.
+
+The Data Set and Data Field options work just like the corresponding fields in the Fill tab.
+
+.. note:: The Data Set and Data Field for extrusions are INDEPENDENT from the Fill tab's controls for Data Set and Data Field. This means that you can choose one attribute to color shapes, and a different attribute to determine the shape's height! If you want them to be the same, you need to set them to the same values explicitly.
+
+
 .. image:: images/layercontrols-extrusion.png
    :scale: 50 %
 
-TODO - Fill and Extrusion data sources are independent.
-
-TODO - Building footprint example.
-
+.. note:: As soon as you click the "Extrusion" tab for a layer, that layer will be shown in 3D mode. To get cycle back to 2D mode, click the icon to the left of the layer name twice (once turns the layer off, and twice brings you back to 2D mode.)
 
 Scale Factor
 ~~~~~~~~~~~~
+
+The :guilabel:`Scale Factor` is the way to specify the transformation from attribute values to heights. At first, it may seem a bit counterintuitive, but you enter a smaller unit value if you want the shapes to be taller.
+
+So:
 
 If 3D extrusions are too short, try a lower value for units.
 
 If 3D extrusions are too tall, try a higher value for units.
 
-Typically experimenting by changing values by factors of ten gets you in the ballpark pretty quickly.
+Typically, experimenting by changing the unit value by factors of ten gets you in the ballpark pretty quickly.
 
 

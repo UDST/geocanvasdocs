@@ -95,25 +95,39 @@
 </ul>
 <p>Using <strong>Quantile</strong> intervals results in bins with approximately the same <em>number of shapes</em> per bin. There may be very different intervals between the breakpoint values.</p>
 <p>Using <strong>Equal</strong> intervals results in bins with <em>breakpoint values</em> set at equal intervals. There may be very different numbers of shapes in each bin.</p>
-<p>Using <strong>Custom</strong> intervals allows you to set the breakpoints between bins manually. This is done in the <em class="guilabel">Custom Intervals</em> dialog box. This can be accessed by clicking the <em class="guilabel">Custom…</em> button in the layer fill theme controls tab.</p>
-<a class="reference internal image-reference" href="_images/custom_intervals_logarithmic.png"><img alt="_images/custom_intervals_logarithmic.png" src="_images/custom_intervals_logarithmic.png" style="width: 316.0px; height: 489.0px;" /></a>
-<a class="reference internal image-reference" href="_images/custom_intervals_linear.png"><img alt="_images/custom_intervals_linear.png" src="_images/custom_intervals_linear.png" style="width: 316.0px; height: 489.0px;" /></a>
+<p>Using <strong>Custom</strong> intervals allows you to set the breakpoints between bins manually. This is done in the <em class="guilabel">Custom Intervals</em> dialog box, which can be opened by clicking the <em class="guilabel">Custom…</em> button.</p>
+<p>There are a few ways you can use the <em class="guilabel">Custom Interval</em> dialog.</p>
+<p><strong>Manual Entry</strong></p>
+<p>Specify each value, then click <em class="guilabel">Apply</em></p>
 <a class="reference internal image-reference" href="_images/custom_intervals.png"><img alt="_images/custom_intervals.png" src="_images/custom_intervals.png" style="width: 316.0px; height: 489.0px;" /></a>
-<div class="section" id="custom-intervals">
-<h4>Custom Intervals<a class="headerlink" href="#custom-intervals" title="Permalink to this headline">¶</a></h4>
-</div>
+<p><strong>Linear Breaks</strong></p>
+<p>With <em class="guilabel">Advanced</em> checked, enter the minimum and maximum values, then click <em class="guilabel">Use linear breaks</em>, and the intermediate values will be calculated as set of even intervals between the start and end value. Then, click <em class="guilabel">Apply</em></p>
+<a class="reference internal image-reference" href="_images/custom_intervals_linear.png"><img alt="_images/custom_intervals_linear.png" src="_images/custom_intervals_linear.png" style="width: 316.0px; height: 489.0px;" /></a>
+<p><strong>Logarithmic Breaks</strong></p>
+<p>With <em class="guilabel">Advanced</em> checked, enter the minimum and maximum values, then click <em class="guilabel">Use logarithmic breaks</em>, and the intermediate values will be calculated as set of intervals between the start and end value, spaced logarithmically. You have the option of specifying the logarithmic base as well. Then, click <em class="guilabel">Apply</em></p>
+<a class="reference internal image-reference" href="_images/custom_intervals_logarithmic.png"><img alt="_images/custom_intervals_logarithmic.png" src="_images/custom_intervals_logarithmic.png" style="width: 316.0px; height: 489.0px;" /></a>
 </div>
 </div>
 <div class="section" id="extrusion">
 <h2>Extrusion<a class="headerlink" href="#extrusion" title="Permalink to this headline">¶</a></h2>
+<p>The <strong>Extrusion</strong> tab lets you choose what attributes are used to calculate the height of shapes. This allows you to turn shapes into 3D volumes, i.e. to &#8220;extrude&#8221; them.</p>
+<p>The Data Set and Data Field options work just like the corresponding fields in the Fill tab.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Data Set and Data Field for extrusions are INDEPENDENT from the Fill tab&#8217;s controls for Data Set and Data Field. This means that you can choose one attribute to color shapes, and a different attribute to determine the shape&#8217;s height! If you want them to be the same, you need to set them to the same values explicitly.</p>
+</div>
 <a class="reference internal image-reference" href="_images/layercontrols-extrusion.png"><img alt="_images/layercontrols-extrusion.png" src="_images/layercontrols-extrusion.png" style="width: 384.0px; height: 313.0px;" /></a>
-<p>TODO - Fill and Extrusion data sources are independent.</p>
-<p>TODO - Building footprint example.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">As soon as you click the &#8220;Extrusion&#8221; tab for a layer, that layer will be shown in 3D mode. To get cycle back to 2D mode, click the icon to the left of the layer name twice (once turns the layer off, and twice brings you back to 2D mode.)</p>
+</div>
 <div class="section" id="scale-factor">
 <h3>Scale Factor<a class="headerlink" href="#scale-factor" title="Permalink to this headline">¶</a></h3>
+<p>The <em class="guilabel">Scale Factor</em> is the way to specify the transformation from attribute values to heights. At first, it may seem a bit counterintuitive, but you enter a smaller unit value if you want the shapes to be taller.</p>
+<p>So:</p>
 <p>If 3D extrusions are too short, try a lower value for units.</p>
 <p>If 3D extrusions are too tall, try a higher value for units.</p>
-<p>Typically experimenting by changing values by factors of ten gets you in the ballpark pretty quickly.</p>
+<p>Typically, experimenting by changing the unit value by factors of ten gets you in the ballpark pretty quickly.</p>
 </div>
 </div>
 </div>
