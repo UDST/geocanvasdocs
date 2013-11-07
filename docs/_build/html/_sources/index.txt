@@ -18,6 +18,7 @@ Contents:
    Adding Attributes
    Layer Controls
    Theming
+   Known Issues
 
 .. |logo| image:: images/icon_256x256@2x.png
    :scale: 25 %
