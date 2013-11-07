@@ -41,7 +41,8 @@ System Requirements
 Mac
 ~~~
 
-GeoCanvas has been tested on OS X 10.8 Mountain Lion and 10.9 Mavericks.
+GeoCanvas has been tested successfully on OS X 10.8 Mountain Lion and 10.9 Mavericks.
+Testing to date indicates that GeoCanvas is incompatible with OS X 10.6. 
 
 
 Windows

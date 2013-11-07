@@ -1,8 +1,7 @@
 .. GeoCanvas documentation master file, created by
    sphinx-quickstart on Fri Nov  1 09:39:12 2013.
 
-.. image:: images/icon_256x256@2x.png
-   :scale: 25 %
+|logo|
 
 Table of Contents
 =================
@@ -19,3 +18,6 @@ Contents:
    Adding Attributes
    Layer Controls
    Theming
+
+.. |logo| image:: images/icon_256x256@2x.png
+   :scale: 25 %
