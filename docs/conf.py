@@ -41,7 +41,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'GeoCanvas'
-copyright = u'2013, Synthicity'
+copyright = u'2016, UrbanSim Inc.'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
